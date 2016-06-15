@@ -3,7 +3,6 @@ package com.gilt.gfc.play.api.http
 import java.util.concurrent.TimeoutException
 
 import com.gilt.gfc.play.test.BaseSpec
-import org.scalatest.concurrent.ScalaFutures
 import play.api.UsefulException
 import play.api.libs.json.JsString
 import play.api.test.FakeRequest
