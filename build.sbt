@@ -6,8 +6,6 @@ version := "git describe --tags --always --dirty".!!.trim.replaceFirst("^v", "")
 
 scalaVersion := "2.11.7"
 
-crossScalaVersions := Seq(scalaVersion.value, "2.10.5")
-
 lazy val PlayVersion = "2.5.4"
 
 libraryDependencies ++= Seq(
