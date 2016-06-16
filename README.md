@@ -30,7 +30,15 @@ class LoggingFilter @Inject() (mat: Materializer, ec: ExecutionContext) extends 
 ```
 
 
+## Publishing
+
+**NOTE:** Pleasse use [semver](http://semver.org/) for tagging/versioning
+
+    git tag vX.X.X
+    git push --tags
+    sbt +publish
+
 ## License
 Copyright 2014 Gilt Groupe, Inc.
 
-Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+Licensed under the MIT License: http://opensource.org/licenses/MIT

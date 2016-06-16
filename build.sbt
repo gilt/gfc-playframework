@@ -2,6 +2,8 @@ name := "gfc-playframework"
 
 organization := "com.gilt"
 
+version := "git describe --tags --always --dirty".!!.trim.replaceFirst("^v", "")
+
 scalaVersion := "2.11.7"
 
 crossScalaVersions := Seq(scalaVersion.value, "2.10.5")
@@ -17,25 +19,15 @@ libraryDependencies ++= Seq(
   "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
 )
 
-releaseCrossBuild := true
-
-releasePublishArtifactsAction := PgpKeys.publishSigned.value
-
 publishMavenStyle := true
 
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
-}
+bintrayOrganization := Some("giltgroupe")
 
 publishArtifact in Test := false
 
 pomIncludeRepository := { _ => false }
 
-licenses := Seq("Apache-style" -> url("https://raw.githubusercontent.com/gilt/gfc-playframework/master/LICENSE"))
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
 homepage := Some(url("https://github.com/gilt/gfc-playframework"))
 
