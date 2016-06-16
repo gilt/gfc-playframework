@@ -36,7 +36,7 @@ class LoggingFilter @Inject() (mat: Materializer, ec: ExecutionContext) extends 
 
     git tag vX.X.X
     git push --tags
-    sbt +publish
+    sbt publish
 
 ## License
 Copyright 2014 Gilt Groupe, Inc.
