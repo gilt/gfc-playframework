@@ -2,7 +2,20 @@
 
 A library that contains a bunch of Play Framework 2.5+ utility classes. Part of the gilt foundation classes.
 
-## Example Usage
+## Getting gfc-playframework
+
+The latest version is 0.0.2, which is built against Scala 2.11.x.
+
+If you're using SBT, add the following line to your build file:
+
+```scala
+libraryDependencies += "com.gilt" %% "gfc-playframework" % "0.0.2"
+```
+
+For Maven and other build tools, you can visit [search.maven.org](http://search.maven.org/#search%7Cga%7C1%7Ccom.gilt%20gfc).
+(This search will also list other available libraries from the gilt fundation classes.)
+
+## Contents and Example Usage
 
 ### com.gilt.gfc.play.api.http.JsonHttpErrorHandler
 
