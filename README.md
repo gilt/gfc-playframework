@@ -1,6 +1,6 @@
 # gfc-playframework [![Build Status](https://travis-ci.org/gilt/gfc-playframework.svg?branch=master)](https://travis-ci.org/gilt/gfc-playframework) [![Join the chat at https://gitter.im/gilt/gfc](https://badges.gitter.im/gilt/gfc.svg)](https://gitter.im/gilt/gfc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-A library that contains a bunch of Play Framework 2.5+ utility classes. Part of the gilt foundation classes.
+A library that contains a bunch of Play Framework 2.5+ utility classes. Part of the [Gilt Foundation Classes](https://github.com/gilt?query=gfc).
 
 ## Getting gfc-playframework
 
